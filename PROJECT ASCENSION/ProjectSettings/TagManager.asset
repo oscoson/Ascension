@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: MiddleGround
+    uniqueID: 1503781355
+    locked: 0
+  - name: Background
+    uniqueID: 1405862403
+    locked: 0
+  - name: Players
+    uniqueID: 972805041
+    locked: 0
+  - name: Enemies
+    uniqueID: 3453179665
+    locked: 0
