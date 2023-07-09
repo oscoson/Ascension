@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c13240065c7efea41a965df7d48321de, type: 3}
   m_Name: Explorer-1
   m_EditorClassIdentifier: 
+  maxHealth: 100
   health: 100
   attack: 1
   defense: 1

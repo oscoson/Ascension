@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Player Character", menuName = "Player")]
 public class PlayerAttributes : ScriptableObject
 {
+    public float maxHealth;
     public float health;
     public int attack;
     public int defense;

@@ -1,22 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
     [Header("Base Attributes")]
     [SerializeField] private PlayerAttributes attributes;
-    [SerializeField] private float health;
-    [SerializeField] private int attack;
-    [SerializeField] private int defense;
-    [SerializeField] private int magic;
-    [SerializeField] private float energyRate;
-    [SerializeField] private int points;
-    [SerializeField] private Abilities[] abilities;
+    public float maxHealth;
+    public float health;
+    public int attack;
+    public int defense;
+    public int magic;
+    public float energyRate;
+    public int points;
+    public Abilities[] abilities;
 
     // Start is called before the first frame update
     void Start()
     {
+        maxHealth = attributes.maxHealth;
         health = attributes.health;
         attack = attributes.attack;
         defense = attributes.defense;
@@ -29,8 +32,13 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
-
-
+    private void FixedUpdate()
+    {
+        if (Keyboard.current[Key.E].isPressed)
+        {
+            health -= 10;
+            Debug.Log(health);
+        }
+    }
 }
