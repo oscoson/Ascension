@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     public int defense;
     public int magic;
     public float energyRate;
+    public float evasionRate;
     public int points;
     public Abilities[] abilities;
 
@@ -25,6 +26,7 @@ public class Player : MonoBehaviour
         defense = attributes.defense;
         magic = attributes.magic;
         energyRate = attributes.energyRate;
+        evasionRate = attributes.evasionRate;
         points = attributes.points;
         abilities = attributes.abilities;
     }
